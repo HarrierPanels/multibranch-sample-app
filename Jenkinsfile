@@ -1,5 +1,5 @@
 pipeline {
-  agent {label 'linux'}
+  agent {label 'aws-ec2-plugin-agent'}
   options {
     buildDiscarder(logRotator(numToKeepStr: '5'))
   }
